@@ -3,6 +3,7 @@ import { navLinks } from "../../constants/index.js"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all"
+gsap.registerPlugin(ScrollTrigger)
 
 const Navbar = () => {
   useGSAP(() => {
@@ -19,7 +20,7 @@ const Navbar = () => {
       },
       {
         backgroundColor: "#000030",
-        backGroundFilter: "blur(10px)",
+        backdropFilter: "blur(10px)",
         duration: 1,
         ease: "power1.inOut",
       }
